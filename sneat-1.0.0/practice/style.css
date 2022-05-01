@@ -1,0 +1,66 @@
+/* ----- */
+/* Overriding Bootstrap 5 Begins*/
+
+@media (min-width: 1540px) {
+  .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+    max-width: 1480px;
+  }
+}
+
+/* Overriding Bootstrap 5 Ends*/
+/* ----- */
+
+/* ----- */
+/* Layout Begins */
+
+:root {
+  --menu-width: 25rem;
+}
+
+.layout-container {
+  min-height: 100vh;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.layout-page,
+.layout-menu {
+  min-height: 1px;
+}
+
+/* Layout - Menu */
+.layout-menu {
+
+}
+
+.menu-vertical {
+  width: var(--menu-width);
+  
+  display: flex;
+  flex-direction: column;
+}
+
+/* Layout - Page */
+.layout-page {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+}
+
+/* Layout Ends */
+/* ----- */
+
+/* ----- */
+/* Menu Collapsed Begins*/
+@media (max-width: 1198.98px) {
+  .menu-vertical {
+    display: none;
+  }
+}
+
+/* Menu Collapsed Ends*/
+/* ----- */
