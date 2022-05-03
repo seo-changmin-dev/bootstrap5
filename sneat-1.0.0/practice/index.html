@@ -13,21 +13,87 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-  <div class="layout-container">
-    <aside class="layout-menu menu-vertical bg-success">
-      
+<body class="bg-warning">
+  <nav class="navbar navbar-light bg-light py-3 mb-3" style="border-bottom: solid 1px #E5E5E5;">
+    <div class="container justify-content-start p-0">
+      <a class="navbar-brand" style="margin-right: 10rem;">Navbar</a>
+
+      <form class="w-50 d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+
+  <div class="container layout-container bg-danger p-0">
+    <main class="layout-container__main bg-info">
+      <div class="d-flex justify-content-between bg-light mb-3 p-0">
+        <div>160 Results for "Sigma"</div>
+        <div>Sort By</div>
+      </div>
+
+      <div class="box-container">
+        <div class="box">
+          <div class="title d-flex">
+            <h5><a>Material Form Data</a></h5>
+            <div class="experimentType_tags">
+
+              <span type="button" class="badge bg-warning"
+                data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tissue factor expression & amid">
+                Invitro
+              </span>
+
+              <span type="button" class="badge bg-warning" tabindex="0"
+                data-bs-toggle="tooltip" data-bs-placement="bottom" title="Mouse Wound Healing">
+                Invivo
+              </span>
+            
+            </div>
+          </div>
+
+          <div class="info-line d-flex">
+            <div class="name text-end me-3" style="width: 150px;">fabricationMethod</div>
+            <div class="data">Nanofiber Scaffold</div>
+          </div>
+
+          <div class="info-line d-flex">
+            <div class="name text-end me-3" style="width: 150px;">Composite</div>
+            <div class="data">Titanium Oxide (Sigma Aldrich)</div>
+          </div>
+
+          <div class="info-line d-flex">
+            <div class="name text-end me-3" style="width: 150px;">Application</div>
+            <div class="data">Controlled Drug Delivery System</div>
+          </div>
+
+          <!-- <div>InVitro Assay</div>
+          <div>InVivo Assay</div> -->
+        </div>
+
+        
+      </div>
+
+    </main>
+
+    <aside class="layout-container__sub d-none d-xl-block bg-success ms-3">
+      sss
     </aside>
 
-    <div class="layout-page bg-info">
-      <div class="container bg-success">
-        hi
-      </div>
-    </div>
   </div>
 
 
-<!-- Javascript -->
+
+<!-- Javascript - Bootstrap 5-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<!-- Javascript - For Pop-over -->
+<script>
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+  })
+</script>
+
 </body>
 </html>

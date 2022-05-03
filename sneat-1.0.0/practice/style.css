@@ -14,41 +14,35 @@
 /* Layout Begins */
 
 :root {
-  --menu-width: 25rem;
+  --sub-width: 25rem;
 }
 
 .layout-container {
-  min-height: 100vh;
-  width: 100%;
-
   display: flex;
-  flex-direction: row-reverse;
+  justify-content: space-between;
 }
 
-.layout-page,
-.layout-menu {
+.layout-container,
+.layout-container__main,
+.layout-container__sub {
   min-height: 1px;
 }
 
-/* Layout - Menu */
-.layout-menu {
-
-}
-
-.menu-vertical {
-  width: var(--menu-width);
-  
-  display: flex;
-  flex-direction: column;
-}
-
-/* Layout - Page */
-.layout-page {
-  width: 100%;
+/* Layout - Main */
+.layout-container__main {
+  width: calc(100% - var(--sub-width) - 1rem);
 
   display: flex;
   flex-direction: column;
-  flex-basis: 100%;
+  /* flex-basis: 100%; */
+}
+
+/* Layout - Sub */
+.layout-container__sub {
+  width: var(--sub-width);
+
+  display: flex;
+  flex-direction: column;
 }
 
 /* Layout Ends */
@@ -57,10 +51,15 @@
 /* ----- */
 /* Menu Collapsed Begins*/
 @media (max-width: 1198.98px) {
-  .menu-vertical {
-    display: none;
+  .layout-container__main {
+    width: 100%;
   }
 }
 
 /* Menu Collapsed Ends*/
 /* ----- */
+
+.backdrop {
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+}
