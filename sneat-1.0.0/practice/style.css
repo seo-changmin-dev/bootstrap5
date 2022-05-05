@@ -30,7 +30,7 @@
 
 /* Layout - Main */
 .layout-container__main {
-  width: calc(100% - var(--sub-width) - 1rem);
+  width: calc(100% - var(--sub-width));
 
   display: flex;
   flex-direction: column;
@@ -48,6 +48,25 @@
 /* Layout Ends */
 /* ----- */
 
+.search-result__outline {
+  padding-bottom: 16px;
+  margin-bottom: 20px;
+  border-bottom: solid 1px gray;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ----- */
 /* Menu Collapsed Begins*/
 @media (max-width: 1198.98px) {
@@ -58,8 +77,3 @@
 
 /* Menu Collapsed Ends*/
 /* ----- */
-
-.backdrop {
-  -webkit-backdrop-filter: blur(3px);
-  backdrop-filter: blur(3px);
-}
