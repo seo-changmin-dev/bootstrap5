@@ -13,6 +13,11 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
   <link rel="stylesheet" href="style.css">
 
+  <!-- Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
 </head>
 
 <body class="">
@@ -28,7 +33,7 @@
   </nav>
 
 
-  <div class="container-lg layout-container bg-danger p-0">
+  <div class="container-lg layout-container p-0">
     <main class="layout-container__main bg-white p-3">
       <div class="search-result__outline">
         <div class="d-flex justify-content-between align-items-center p-0">
@@ -87,30 +92,70 @@
       </div>
     </main>
 
-    <aside class="layout-container__sub d-none d-xl-block bg-success">
-      <div class="" style="padding: 1.5rem; background-color: #eeeeee;">
+    <aside class="layout-container__sub d-none d-xl-block">
+      <div class="wrapper" style="padding: 1rem 1.5rem;">
         
         <div class="layout-accordion">
-          <div class="accordion accordion-flush">
+          <div class="accordion-main accordion-flush">
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingOne">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false">
-                  <b>Accordion Item #1</b>
+                <button class="accordion-button collapsed font__main" type="button" data-bs-toggle="collapse" data-bs-target="#main-material" aria-expanded="false">
+                  Material
                 </button>
               </h2>
-              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne">
-                <div class="accordion-body">
-                  Item 1
+              
+              <!-- <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"> -->
+              <div id="main-material" class="accordion-collapse">
+                <div class="accordion-body pt-1">
+                  <input class="form-control" type="text" placeholder="Material">
+
+                  <!-- =============================================== -->
+                  <!-- Sub Accordion Begins -->
+                  <div class="accordion-sub accordion-flush">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed font__sub"
+                          type="button" data-bs-toggle="collapse" data-bs-target="#sub-metal" aria-expanded="false">
+                          Metal
+                        </button>
+                      </h2>
+                      <div id="sub-metal" class="accordion-collapse collapse">
+                        <div class="accordion-body d-flex flex-column">
+                          <label> <input class="form-check-input" type="checkbox"> Titanium </label>
+                          <label> <input class="form-check-input" type="checkbox"> Titanium </label>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed font__sub"
+                          type="button" data-bs-toggle="collapse" data-bs-target="#sub-ceramic" aria-expanded="false">
+                          Ceramic
+                        </button>
+                      </h2>
+                      <div id="sub-ceramic" class="accordion-collapse collapse">
+                        <div class="accordion-body d-flex flex-column">
+                          <label> <input class="form-check-input" type="checkbox"> Alumina </label>
+                          <label> <input class="form-check-input" type="checkbox"> Zirconia </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Sub Accordion Ends -->
+                  <!-- =============================================== -->
+
                 </div>
               </div>
             </div>
+            <!--
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingTwo">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false">
                   <b>Accordion Item #2</b>
                 </button>
               </h2>
-              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo">
+              <div id="flush-collapseTwo" class="accordion-collapse collapse">
                 <div class="accordion-body">
                   Item 2
                 </div>
@@ -122,19 +167,21 @@
                   <b>Accordion Item #3</b>
                 </button>
               </h2>
-              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree">
+              <div id="flush-collapseThree" class="accordion-collapse collapse">
                 <div class="accordion-body">
-                  Item 2
+                  Item 3
                 </div>
               </div>
             </div>
+            -->
           </div>
         </div>
 
-
+        <!--
         <div class="d-flex justify-content-center">
           <button type="button" class="btn btn-danger w-75 mt-5">Search</button>
         </div>
+        -->
       </div>
     </aside>
 
