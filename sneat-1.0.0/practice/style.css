@@ -27,8 +27,18 @@
     background-color: var(--sidebar-color);
   }
 
+  .accordion-main .form-control {
+    padding: 0.3rem 0.75rem;
+  }
+
+  .accordion-main .form-control:focus {
+    color: #212529;
+    border-color: #212529;
+    box-shadow: 0 0 0 0.125rem #dddddd;
+  }
+
   .accordion-main .accordion-button {
-    padding: 0.5rem 0;
+    padding: 0.75rem 0;
     background-color: var(--sidebar-color);
     color: black;
   }
@@ -112,8 +122,7 @@
 }
 
 .layout-container,
-.layout-container__main,
-.layout-container__sub {
+.layout-container__main {
   min-height: 1px;
 }
 
