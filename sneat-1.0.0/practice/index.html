@@ -11,6 +11,7 @@
   <!-- CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="bootstrap5.css">
   <link rel="stylesheet" href="style.css">
 
   <!-- Fonts-->
@@ -20,22 +21,56 @@
 
 </head>
 
-<body class="">
-  <nav class="navbar navbar-light bg-light py-3 mb-3" style="border-bottom: solid 1px #E5E5E5;">
-    <div class="container justify-content-start p-0">
-      <a class="navbar-brand" style="margin-right: 10rem;">Navbar</a>
+<body class="" style="height: 1800px;">
+  <!-- ===============================================-->
+  <!-- Top Navigation Bar -->
+  <!-- ===============================================-->
+  <nav class="navbar navbar-expand-md navbar-light bg-transparent py-2" style="border-bottom: solid 1px gray;">
+    <div class="container-lg">
+      <!-- Logo -->
+      <a class="navbar-brand d-flex align-items-center fw-semi-bold fs-4" href="#">
+        <img class="mx-2" src="biology_gren.png" alt="" width="20"/>
+        <div class="font-lemonada" style="color: #95c33b; font-weight: 400;">
+          BIOM
+        </div>
+      </a>
 
-      <form class="w-50 d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </nav>
+      <!-- Hamburger Button For Small Display -->
+      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+  </div>
+</nav>
 
 
   <div class="container-lg layout-container p-0">
     <main class="layout-container__main bg-white p-3">
       <div class="search-result__outline">
+        <div class="mb-3">
+          <div class="input-group">
+            <span class="input-group-text fs-5 px-3">
+              <i class="bi bi-search-heart"></i>
+              </span>
+            <input type="text" class="form-control border-start-0 border-end-0 py-2 ps-0" placeholder="Search...">
+            <span class="input-group-text"><small>Clear All</small></span>
+          </div>
+        </div>
+
         <div class="d-flex justify-content-between align-items-center p-0">
           <h5 class="m-0">
             <i class="bi bi-paperclip"></i>160 Results
@@ -88,13 +123,344 @@
           <div>InVivo Assay</div> -->
         </div>
 
+        <div class="p-3" style="border-bottom: solid 1px #969696;">
+          <div class="title d-flex">
+            <h5><a>Material Form Data</a></h5>
+            <div class="experimentType_tags ms-2">
 
+              <span type="button" class="badge bg-warning"
+                data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tissue factor expression & amid">
+                Invitro
+              </span>
+
+              <span type="button" class="badge bg-info"
+                data-bs-toggle="tooltip" data-bs-placement="bottom" title="Mouse Wound Healing">
+                Invivo
+              </span>
+            
+            </div>
+          </div>
+
+          <div class="info-line d-flex">
+            <div class="name text-end me-3" style="width: 150px;">Fabrication Method</div>
+            <div class="data">Nanofiber Scaffold</div>
+          </div>
+
+          <div class="info-line d-flex">
+            <div class="name text-end me-3" style="width: 150px;">Composite</div>
+            <div class="data">Titanium Oxide (Sigma Aldrich)</div>
+          </div>
+
+          <div class="info-line d-flex">
+            <div class="name text-end me-3" style="width: 150px;">Application</div>
+            <div class="data">Controlled Drug Delivery System</div>
+          </div>
+
+          <!-- <div>InVitro Assay</div>
+          <div>InVivo Assay</div> -->
+        </div>
+
+        <div class="p-3" style="border-bottom: solid 1px #969696;">
+          <div class="title d-flex">
+            <h5><a>Material Form Data</a></h5>
+            <div class="experimentType_tags ms-2">
+
+              <span type="button" class="badge bg-warning"
+                data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tissue factor expression & amid">
+                Invitro
+              </span>
+
+              <span type="button" class="badge bg-info"
+                data-bs-toggle="tooltip" data-bs-placement="bottom" title="Mouse Wound Healing">
+                Invivo
+              </span>
+            
+            </div>
+          </div>
+
+          <div class="info-line d-flex">
+            <div class="name text-end me-3" style="width: 150px;">Fabrication Method</div>
+            <div class="data">Nanofiber Scaffold</div>
+          </div>
+
+          <div class="info-line d-flex">
+            <div class="name text-end me-3" style="width: 150px;">Composite</div>
+            <div class="data">Titanium Oxide (Sigma Aldrich)</div>
+          </div>
+
+          <div class="info-line d-flex">
+            <div class="name text-end me-3" style="width: 150px;">Application</div>
+            <div class="data">Controlled Drug Delivery System</div>
+          </div>
+
+          <!-- <div>InVitro Assay</div>
+          <div>InVivo Assay</div> -->
+        </div>
+
+        <div class="p-3" style="border-bottom: solid 1px #969696;">
+          <div class="title d-flex">
+            <h5><a>Material Form Data</a></h5>
+            <div class="experimentType_tags ms-2">
+
+              <span type="button" class="badge bg-warning"
+                data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tissue factor expression & amid">
+                Invitro
+              </span>
+
+              <span type="button" class="badge bg-info"
+                data-bs-toggle="tooltip" data-bs-placement="bottom" title="Mouse Wound Healing">
+                Invivo
+              </span>
+            
+            </div>
+          </div>
+
+          <div class="info-line d-flex">
+            <div class="name text-end me-3" style="width: 150px;">Fabrication Method</div>
+            <div class="data">Nanofiber Scaffold</div>
+          </div>
+
+          <div class="info-line d-flex">
+            <div class="name text-end me-3" style="width: 150px;">Composite</div>
+            <div class="data">Titanium Oxide (Sigma Aldrich)</div>
+          </div>
+
+          <div class="info-line d-flex">
+            <div class="name text-end me-3" style="width: 150px;">Application</div>
+            <div class="data">Controlled Drug Delivery System</div>
+          </div>
+
+          <!-- <div>InVitro Assay</div>
+          <div>InVivo Assay</div> -->
+        </div>
+
+        <div class="p-3" style="border-bottom: solid 1px #969696;">
+          <div class="title d-flex">
+            <h5><a>Material Form Data</a></h5>
+            <div class="experimentType_tags ms-2">
+
+              <span type="button" class="badge bg-warning"
+                data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tissue factor expression & amid">
+                Invitro
+              </span>
+
+              <span type="button" class="badge bg-info"
+                data-bs-toggle="tooltip" data-bs-placement="bottom" title="Mouse Wound Healing">
+                Invivo
+              </span>
+            
+            </div>
+          </div>
+
+          <div class="info-line d-flex">
+            <div class="name text-end me-3" style="width: 150px;">Fabrication Method</div>
+            <div class="data">Nanofiber Scaffold</div>
+          </div>
+
+          <div class="info-line d-flex">
+            <div class="name text-end me-3" style="width: 150px;">Composite</div>
+            <div class="data">Titanium Oxide (Sigma Aldrich)</div>
+          </div>
+
+          <div class="info-line d-flex">
+            <div class="name text-end me-3" style="width: 150px;">Application</div>
+            <div class="data">Controlled Drug Delivery System</div>
+          </div>
+
+          <!-- <div>InVitro Assay</div>
+          <div>InVivo Assay</div> -->
+        </div>
+
+        <div class="p-3" style="border-bottom: solid 1px #969696;">
+          <div class="title d-flex">
+            <h5><a>Material Form Data</a></h5>
+            <div class="experimentType_tags ms-2">
+
+              <span type="button" class="badge bg-warning"
+                data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tissue factor expression & amid">
+                Invitro
+              </span>
+
+              <span type="button" class="badge bg-info"
+                data-bs-toggle="tooltip" data-bs-placement="bottom" title="Mouse Wound Healing">
+                Invivo
+              </span>
+            
+            </div>
+          </div>
+
+          <div class="info-line d-flex">
+            <div class="name text-end me-3" style="width: 150px;">Fabrication Method</div>
+            <div class="data">Nanofiber Scaffold</div>
+          </div>
+
+          <div class="info-line d-flex">
+            <div class="name text-end me-3" style="width: 150px;">Composite</div>
+            <div class="data">Titanium Oxide (Sigma Aldrich)</div>
+          </div>
+
+          <div class="info-line d-flex">
+            <div class="name text-end me-3" style="width: 150px;">Application</div>
+            <div class="data">Controlled Drug Delivery System</div>
+          </div>
+
+          <!-- <div>InVitro Assay</div>
+          <div>InVivo Assay</div> -->
+        </div>
+
+        <div class="p-3" style="border-bottom: solid 1px #969696;">
+          <div class="title d-flex">
+            <h5><a>Material Form Data</a></h5>
+            <div class="experimentType_tags ms-2">
+
+              <span type="button" class="badge bg-warning"
+                data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tissue factor expression & amid">
+                Invitro
+              </span>
+
+              <span type="button" class="badge bg-info"
+                data-bs-toggle="tooltip" data-bs-placement="bottom" title="Mouse Wound Healing">
+                Invivo
+              </span>
+            
+            </div>
+          </div>
+
+          <div class="info-line d-flex">
+            <div class="name text-end me-3" style="width: 150px;">Fabrication Method</div>
+            <div class="data">Nanofiber Scaffold</div>
+          </div>
+
+          <div class="info-line d-flex">
+            <div class="name text-end me-3" style="width: 150px;">Composite</div>
+            <div class="data">Titanium Oxide (Sigma Aldrich)</div>
+          </div>
+
+          <div class="info-line d-flex">
+            <div class="name text-end me-3" style="width: 150px;">Application</div>
+            <div class="data">Controlled Drug Delivery System</div>
+          </div>
+
+          <!-- <div>InVitro Assay</div>
+          <div>InVivo Assay</div> -->
+        </div>
+
+        <div class="p-3" style="border-bottom: solid 1px #969696;">
+          <div class="title d-flex">
+            <h5><a>Material Form Data</a></h5>
+            <div class="experimentType_tags ms-2">
+
+              <span type="button" class="badge bg-warning"
+                data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tissue factor expression & amid">
+                Invitro
+              </span>
+
+              <span type="button" class="badge bg-info"
+                data-bs-toggle="tooltip" data-bs-placement="bottom" title="Mouse Wound Healing">
+                Invivo
+              </span>
+            
+            </div>
+          </div>
+
+          <div class="info-line d-flex">
+            <div class="name text-end me-3" style="width: 150px;">Fabrication Method</div>
+            <div class="data">Nanofiber Scaffold</div>
+          </div>
+
+          <div class="info-line d-flex">
+            <div class="name text-end me-3" style="width: 150px;">Composite</div>
+            <div class="data">Titanium Oxide (Sigma Aldrich)</div>
+          </div>
+
+          <div class="info-line d-flex">
+            <div class="name text-end me-3" style="width: 150px;">Application</div>
+            <div class="data">Controlled Drug Delivery System</div>
+          </div>
+
+          <!-- <div>InVitro Assay</div>
+          <div>InVivo Assay</div> -->
+        </div>
+
+        <div class="p-3" style="border-bottom: solid 1px #969696;">
+          <div class="title d-flex">
+            <h5><a>Material Form Data</a></h5>
+            <div class="experimentType_tags ms-2">
+
+              <span type="button" class="badge bg-warning"
+                data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tissue factor expression & amid">
+                Invitro
+              </span>
+
+              <span type="button" class="badge bg-info"
+                data-bs-toggle="tooltip" data-bs-placement="bottom" title="Mouse Wound Healing">
+                Invivo
+              </span>
+            
+            </div>
+          </div>
+
+          <div class="info-line d-flex">
+            <div class="name text-end me-3" style="width: 150px;">Fabrication Method</div>
+            <div class="data">Nanofiber Scaffold</div>
+          </div>
+
+          <div class="info-line d-flex">
+            <div class="name text-end me-3" style="width: 150px;">Composite</div>
+            <div class="data">Titanium Oxide (Sigma Aldrich)</div>
+          </div>
+
+          <div class="info-line d-flex">
+            <div class="name text-end me-3" style="width: 150px;">Application</div>
+            <div class="data">Controlled Drug Delivery System</div>
+          </div>
+
+          <!-- <div>InVitro Assay</div>
+          <div>InVivo Assay</div> -->
+        </div>
+
+        <div class="p-3" style="border-bottom: solid 1px #969696;">
+          <div class="title d-flex">
+            <h5><a>Material Form Data</a></h5>
+            <div class="experimentType_tags ms-2">
+
+              <span type="button" class="badge bg-warning"
+                data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tissue factor expression & amid">
+                Invitro
+              </span>
+
+              <span type="button" class="badge bg-info"
+                data-bs-toggle="tooltip" data-bs-placement="bottom" title="Mouse Wound Healing">
+                Invivo
+              </span>
+            
+            </div>
+          </div>
+
+          <div class="info-line d-flex">
+            <div class="name text-end me-3" style="width: 150px;">Fabrication Method</div>
+            <div class="data">Nanofiber Scaffold</div>
+          </div>
+
+          <div class="info-line d-flex">
+            <div class="name text-end me-3" style="width: 150px;">Composite</div>
+            <div class="data">Titanium Oxide (Sigma Aldrich)</div>
+          </div>
+
+          <div class="info-line d-flex">
+            <div class="name text-end me-3" style="width: 150px;">Application</div>
+            <div class="data">Controlled Drug Delivery System</div>
+          </div>
+
+          <!-- <div>InVitro Assay</div>
+          <div>InVivo Assay</div> -->
+        </div>
       </div>
     </main>
 
     <!--  d-none d-xl-block -->
     <aside class="layout-container__sub d-none d-xl-block">
-      <div id="sidebar" class="wrapper offcanvas offcanvas-end" style="padding: 1rem 1.5rem;">
+      <div id="sidebar" class="wrapper" style="padding: 1rem 1.5rem;">
         
         <div class="layout-accordion">
           <div class="accordion-main accordion-flush">
@@ -219,36 +585,6 @@
       </div>
     </aside>
 
-  </div>
-
-
-
-    
-  <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar">Toggle right offcanvas</button>
-
-
-  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight">
-    <div class="offcanvas-header">
-      <h5 id="offcanvasRightLabel">Offcanvas right</h5>
-      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-
-    <div class="offcanvas-body">
-      ...
-    </div>
-  </div>
-
-
-
-
-
-
-
-
-  <div class="toggle-menu d-xl-none">
-    <div class="btn btn-toggle-menu" style="border: solid 1px #d3d3d3;">
-      <i class="bi bi-gear-fill"></i>
-    </div>
   </div>
 
 

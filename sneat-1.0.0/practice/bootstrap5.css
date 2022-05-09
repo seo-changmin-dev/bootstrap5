@@ -1,0 +1,22 @@
+@media (min-width: 1540px) {
+  .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+    max-width: 1480px;
+  }
+}
+
+.tooltip-inner {
+  max-width: 15rem;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: #ced4da; /* Default Color in form-control */
+}
+
+.input-group-text {
+  background-color: #ffffff; /* Same to background of form-control */
+}
+
+.bg-lightgray {
+  background-color: #d3d3d3;
+}
