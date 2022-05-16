@@ -1,16 +1,17 @@
 :root {
-  --sidebar-color: #eeeeee;
+  --sidebar-color: white;
+  --color-search_content: #F8F8F8;
+  --color-search_border: #F0F0F0;
 }
 
 
 /* ----- */
 /* Overriding Bootstrap 5 Begins*/
 
-
-
-
-
   /* Accordion Begins*/
+  .accordion-body label {
+    margin-top: 0.125rem;
+  }
 
   /* Main */
   .wrapper {
@@ -35,6 +36,9 @@
     padding: 0.75rem 0;
     background-color: var(--sidebar-color);
     color: black;
+
+    /* font-family: 'Open Sans', sans-serif; */
+    padding-left: 0.25rem;
   }
 
   .accordion-main .accordion-button:not(.collapsed) {
@@ -55,6 +59,7 @@
   .accordion-main .accordion-body {
     padding: 0;
     background-color: var(--sidebar-color);
+    margin-bottom: 0.5rem;
   }
 
   /* Sub */
@@ -65,6 +70,7 @@
   .accordion-sub .accordion-button {
     padding: 0.5rem;
     color: black;
+    font-family: 'Open Sans', sans-serif;
   }
 
   .accordion-sub .accordion-button:not(.collapsed) {
@@ -84,6 +90,11 @@
 
   .accordion-sub .accordion-body {
     padding: 0rem 0.5rem;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .font-serif {
+    font-family: 'Open Sans', sans-serif;
   }
 
   .font__main {
@@ -107,7 +118,7 @@
 /* Layout Begins */
 
 :root {
-  --sub-width: 25rem;
+  --sub-width: 22.5rem;
 }
 
 .layout-container {
@@ -141,9 +152,9 @@
 /* ----- */
 
 .search-result__outline {
-  padding-bottom: 16px;
-  margin-bottom: 20px;
-  border-bottom: solid 1px gray;
+  /* padding-bottom: 16px; */
+  margin-bottom: 0.5rem;
+  /* border-bottom: solid 1px gray; */
 }
 
 
@@ -181,4 +192,31 @@
 }
 .toggle-menu .btn-toggle-menu:hover {
   box-shadow: none;
+}
+
+.bg-search_content {
+  background-color: var(--color-search_content);
+}
+
+.bg-search_border {
+  background-color: var(--color-search_border);
+}
+
+.search_content {
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+}
+
+.fs-7 {
+  font-size: 0.95rem;
+}
+
+.my-sticky {
+  position: sticky;
+  top: 1rem;
+}
+
+.bg-footer {
+  background-color: #333333;
 }
